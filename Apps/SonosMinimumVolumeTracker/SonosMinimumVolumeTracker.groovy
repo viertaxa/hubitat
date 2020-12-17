@@ -23,6 +23,7 @@
 * RELEASE HISTORY:
 *     - 0.1.0: Initial Release
 *     - 0.1.1: Add support for uninstalled() callback
+*     - 0.1.2: Change input selection to show only Sonos devices
 *
 */
 
@@ -44,7 +45,7 @@ def mainPage() {
 		section {
 			input "thisName", "text", title: "Name this Sonos minimum finder", submitOnChange: true
 			if(thisName) app.updateLabel("$thisName")
-			input "sonoses", "capability.musicPlayer", title: "Select Sonos Devices", submitOnChange: true, required: true, multiple: true
+			input "sonoses", "device.SonosPlayer", title: "Select Sonos Devices", submitOnChange: true, required: true, multiple: true
             input "enableLogDebug", "bool", title: "Enable Debug Logging", submitOnChange: true, required: true, defaultValue: false
 			if(sonoses) paragraph "Current Sonos minimum is ${minSonosVolume()}"
 		}

@@ -22,6 +22,7 @@
 *
 * RELEASE HISTORY:
 *     - 0.1.0: Initial Release
+*     - 0.1.1: Add support for uninstalled() callback
 *
 */
 
@@ -55,6 +56,15 @@ def installed() {
     logTrace "Calling initialize()"
 	initialize()
     logTrace "Exiting: installed()"
+}
+
+def uninstalled() {
+    logTrace "Entering: uninstalled()"
+    logTrace "Calling unsubsscribe"
+    unsubscribe()
+    logTrace "calling deleteChildDevice()"
+    deleteChildDevice("MinimumSonosVolume${app.id}")
+    logTrace "Exiting: uninstalled()"
 }
 
 def updated() {

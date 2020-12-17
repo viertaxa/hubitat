@@ -17,6 +17,14 @@
 * 
 */
 
+
+/*
+*
+* RELEASE HISTORY:
+*     - 0.1.0: Initial Release
+*
+*/
+
 definition(
     name: "Minimum Sonos Volume Tracker",
     namespace: "com.viertaxa.hubitat",

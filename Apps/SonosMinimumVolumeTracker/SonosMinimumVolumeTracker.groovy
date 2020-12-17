@@ -111,10 +111,7 @@ void initialize() {
 Integer minSonosVolume() {
     logTrace 'Entering minSonosVolume()'
     logTrace 'Getting minimum sonos volume'
-    String minVolume = sonoses.collect { sonos ->
-        sonos.currentStates.findAll { state ->
-            state.name == 'volume' } *.value.min()
-    }.min()
+    Integer minVolume = sonoses*.currentState('volume')*.value*.toInteger().min()
     logDebug "Found minimum volume $minVolume"
     logTrace 'Exiting: minSonosVolume'
     return minVolume.toInteger()

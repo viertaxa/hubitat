@@ -1,0 +1,18 @@
+{
+  "packageName": "Sonos Minimum Volume Tracker",
+  "author": "Taylor Vierrether",
+  "version": "0.1.2",
+  "minimumHEVersion": "2.2.4",
+  "dateReleased": "2020-12-17",
+  "apps": [
+    {
+      "id": "6481e79c-b281-44fd-a713-fa4c543b3182",
+      "name": "Minimum Sonos Volume Tracker",
+      "namespace": "com.viertaxa.hubitat",
+      "location": "https://raw.githubusercontent.com/viertaxa/hubitat/main/Apps/SonosMinimumVolumeTracker/SonosMinimumVolumeTracker.groovy",
+      "required": true,
+      "oauth": false,
+      "primary": false
+    }
+  ]
+}

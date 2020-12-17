@@ -1,0 +1,18 @@
+{
+	"author": "Taylor Vierrether",
+	"gitHubUrl": "https://github.com/viertaxa/",
+	"payPalUrl": "https://paypal.me/viertaxa",
+	"packages": [
+		{
+			"name": "Sonos Minimum Volume Tracker",
+            "category": "Convenience",
+            "tags": [
+                "Tools & Utilities",
+                "Speakers"
+              ],
+			"location": "https://raw.githubusercontent.com/viertaxa/hubitat/main/Apps/SonosMinimumVolumeTracker/hpm/packageManifest.json",
+			"description": "Track the minimum volume of all selected Sonos speakers."
+		}
+	]
+	
+}

@@ -11,6 +11,20 @@ Contributions are welcome! Please feel free to open a PR or an issue on GitHub.
 
 Convention for this repository is to fork it, create a branch `feature/<featureName>` on your fork, and commit changes there. Once your changes are ready to merge back into this repository, open a PR from your repository's feature branch into the `main` branch of this repository.
 
+# Sponsoring
+
+Your sponsorship is appreciated and helps to directly fund further development.
+
+You can sponsor on a recurring basis through GitHub sponsors in the right sidebar, just hit the :heart: icon.
+
+Alternately, you can do one-off sponsorships through PayPal, Bitcoin, or Ethereum.
+
+PayPal: [https://paypal.me/viertaxa](https://paypal.me/viertaxa)
+
+BTC: `bc1q7gxq8j0ur89rpw27fay0t4mujd7aetvtqueu55`
+
+ETH: `0x81bC43EAA16Ef3FeD4694d57bDAeA4EBa9398d51`
+
 # License Information
 
 > Copyright 2020 Taylor Vierrether

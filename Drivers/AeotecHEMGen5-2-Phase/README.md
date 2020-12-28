@@ -12,6 +12,13 @@ This driver is for the Aeotec Gen 5 Home Energy Monitor (HEM), 2 Phase Version.
 
 This driver is in `BETA` status and is considered a *MVP* (Minimum Viable Product). While all basic functionality should work, nothing extra has been added. Please file issues with feature requests if there is a functionality you would like to see added.
 
+## Known Issues
+
+- Hubitat's Driver interface does not handle multi-select options well. This means a few things:
+    - You will not see the option to multi-select until you save the configuration at least once.
+    - Selections do not persist after refresh or saving.
+    - Unfortunately, there is no workaround for this. If you find it frustrating, please bring it up with Hubitat support.
+
 ## Tested environments
 
 **Hubs:**
@@ -26,3 +33,4 @@ This driver is in `BETA` status and is considered a *MVP* (Minimum Viable Produc
 - 0.1.1: Fix typo introduced in cleanup of code
 - 0.1.2: Add back in ability to enable debug messaging
 - 0.1.3: Cleanup of cruft and a bit of debug logging added
+- 0.1.4: Tiny bit of cleanup

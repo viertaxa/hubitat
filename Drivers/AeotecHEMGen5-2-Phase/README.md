@@ -23,3 +23,4 @@ This driver is in `BETA` status and is considered a *MVP* (Minimum Viable Produc
 ## Release Notes
 
 - 0.1.0: Initial Release
+- 0.1.1: Fix typo introduced in cleanup of code

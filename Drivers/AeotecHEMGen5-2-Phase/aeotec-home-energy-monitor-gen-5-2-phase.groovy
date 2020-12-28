@@ -611,7 +611,7 @@ def logDebug(message) {
 
 def logTrace(message) {
     //VERY VERBOSE. Only enable during development!
-    dev logTraceMessages = false
+    def logTraceMessages = false
     if (logTraceMessages) log.trace message
 }
 def runCommandsWithInterstitialDelay(commands, delay = 300) {

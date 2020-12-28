@@ -24,3 +24,4 @@ This driver is in `BETA` status and is considered a *MVP* (Minimum Viable Produc
 
 - 0.1.0: Initial Release
 - 0.1.1: Fix typo introduced in cleanup of code
+- 0.1.2: Add back in ability to enable debug messaging

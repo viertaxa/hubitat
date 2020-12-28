@@ -20,6 +20,7 @@
 * RELEASE HISTORY:
 *     - 0.1.0: Initial Release
 *     - 0.1.1: Fix typo introduced in cleanup of code
+*     - 0.1.2: Add back in ability to enable debug messaging
 *
 */
 
@@ -122,6 +123,8 @@ metadata {
         input name: 'group3ReportInterval', type: 'number', range: 1..4294967295, title: 'Group 3 Report Interval',
             description: 'Choose how frequently values will be reported for group 3 in seconds',
             defaultValue: 120, required: true
+        input name: 'logDebugMessages', type: 'bool', title: 'Enable Debug Logging',
+            defaultValue: false, required: true
     }
 }
 //

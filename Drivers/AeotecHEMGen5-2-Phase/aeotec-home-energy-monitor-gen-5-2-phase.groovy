@@ -21,6 +21,7 @@
 *     - 0.1.0: Initial Release
 *     - 0.1.1: Fix typo introduced in cleanup of code
 *     - 0.1.2: Add back in ability to enable debug messaging
+*     - 0.1.3: Cleanup of cruft and a bit of debug logging added
 *
 */
 
@@ -70,10 +71,6 @@ metadata {
     }
 
     preferences {
-        input name: 'kwhCost', type: 'decimal', title: 'Dollar cost per kWh',
-            defaultValue: '0.12345',
-            required: false
-        
         input name: 'enableCrc16Encap', type: 'bool', title: 'Enable CRC16 Encapsulation',
             description: 'Enable CRC16 Encapsulation. NOTE: C-7 currently is dropping CRC16 messages from this device. Recommend leaving disabled.',
             defaultValue: false, required: true
@@ -435,10 +432,6 @@ def setAssociations() {
     refreshAssociations()
 }
 
-def aaDebug() {
-    runCommand(zwave.manufacturerSpecificV2.manufacturerSpecificGet())
-}
-
 //
 // zwaveEvent Methods
 //
@@ -534,7 +527,7 @@ def zwaveEvent(hubitat.zwave.commands.meterv4.MeterReport cmd, int endpoint = 0)
             logWarn "Scale not implemented. ${cmd.scale}, ${cmd.scale2}: ${cmd.scaledMeterValue}"
             break
     }
-
+    logDebug "Got message for endpoint: $endpoint for scale: $cmd.scale, scale2: $cmd.scale2 value: $cmd.scaledMeterValue"
     sendEvent(name: "$label$source", value: cmd.scaledMeterValue.toFloat(), unit: unit)
 }
 //COMMAND_CLASS_CRC_16_ENCAP V1

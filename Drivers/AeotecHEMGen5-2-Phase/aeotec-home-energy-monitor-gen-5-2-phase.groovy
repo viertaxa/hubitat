@@ -22,6 +22,7 @@
 *     - 0.1.1: Fix typo introduced in cleanup of code
 *     - 0.1.2: Add back in ability to enable debug messaging
 *     - 0.1.3: Cleanup of cruft and a bit of debug logging added
+*     - 0.1.4: Tiny bit of cleanup
 *
 */
 
@@ -72,7 +73,7 @@ metadata {
 
     preferences {
         input name: 'enableCrc16Encap', type: 'bool', title: 'Enable CRC16 Encapsulation',
-            description: 'Enable CRC16 Encapsulation. NOTE: C-7 currently is dropping CRC16 messages from this device. Recommend leaving disabled.',
+            description: 'Enable CRC16 Encapsulation. NOTE: C-7 currently is dropping CRC16 messages from this device. <em>Strongly</em> recommend leaving disabled.',
             defaultValue: false, required: true
         input name: 'enableSelectiveReport', type: 'bool', title: 'Enable Selective Reporting',
             description: 'Enable reporting only on threshold cross as defined below.',

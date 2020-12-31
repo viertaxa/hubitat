@@ -21,9 +21,9 @@ Alternately, you can do one-off sponsorships through PayPal, Bitcoin, or Ethereu
 
 PayPal: [https://paypal.me/viertaxa](https://paypal.me/viertaxa)
 
-BTC: `bc1q7gxq8j0ur89rpw27fay0t4mujd7aetvtqueu55`
+BTC: `bc1qev8rmfmrmxlzdhvp3p76na86gk883c5nxwa9rc`
 
-ETH: `0x81bC43EAA16Ef3FeD4694d57bDAeA4EBa9398d51`
+ETH: `0xb4a77daDB218cAd59A9cfe02B252282091CbdFA4`
 
 # License Information
 

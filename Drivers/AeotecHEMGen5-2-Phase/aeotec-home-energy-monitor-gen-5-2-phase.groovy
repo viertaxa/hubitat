@@ -33,7 +33,7 @@ import groovy.transform.Field
 //
 metadata {
     definition(
-        name: 'Aeotec Home Energy Monitor (Gen 5)',
+        name: 'Aeotec Home Energy Monitor 2 phase (Gen 5)',
         namespace: 'com.viertaxa.hubitat',
         author: 'Taylor Vierrether'
     ) {

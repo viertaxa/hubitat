@@ -412,7 +412,7 @@ def setAssociations() {
     logTrace "Iterating on multiChannelAssociations"
     state.multiChannelAssociations[1].each { node ->
         logTrace "Removing node: $node"
-        runCommand(zwave.multiChannelAssociationV3.multiChannelAssociationRemove(groupingIdentifier: 1, nodeId: node))
+        runCommand(zwave.multiChannelAssociationV3.multiChannelAssociationRemove(groupingIdentifier: 1, nodeId: [node]))
         pauseExecution(1)
     }
     logTrace "Refreshing Associations"

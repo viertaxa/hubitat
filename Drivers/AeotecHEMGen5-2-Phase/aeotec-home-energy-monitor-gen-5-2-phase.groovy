@@ -33,7 +33,7 @@ import groovy.transform.Field
 //
 metadata {
     definition(
-        name: 'Aeotec Home Energy Monitor (Gen 5)',
+        name: 'Aeotec Home Energy Monitor 2 phase (Gen 5)',
         namespace: 'com.viertaxa.hubitat',
         author: 'Taylor Vierrether'
     ) {
@@ -412,7 +412,7 @@ def setAssociations() {
     logTrace "Iterating on multiChannelAssociations"
     state.multiChannelAssociations[1].each { node ->
         logTrace "Removing node: $node"
-        runCommand(zwave.multiChannelAssociationV3.multiChannelAssociationRemove(groupingIdentifier: 1, nodeId: node))
+        runCommand(zwave.multiChannelAssociationV3.multiChannelAssociationRemove(groupingIdentifier: 1, nodeId: [node]))
         pauseExecution(1)
     }
     logTrace "Refreshing Associations"
@@ -638,4 +638,4 @@ def runCommand(command) {
     logTrace "Sending hubAction"
     sendHubCommand action
     logTrace "Returning from runCommand"
-}
+}   
